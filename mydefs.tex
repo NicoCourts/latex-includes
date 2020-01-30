@@ -261,7 +261,9 @@
 \newcommand{\op}{^{\text{op}}}
 \newcommand{\rmod}[1]{\mathbf{mod}\text{-}#1}
 \newcommand{\lmod}[1]{#1\text{-}\mathbf{mod}}
-\DeclareMathOperator{\Vectk}{\mathbf{Vect}_k}
+\newcommand{\rMod}[1]{\mathbf{Mod}\text{-}#1}
+\newcommand{\lMod}[1]{#1\text{-}\mathbf{Mod}}
+\DeclareMathOperator{\Vectk}{\Vect_k}
 \DeclareMathOperator{\Ch}{\mathbf{Ch}}
 \newcommand*{\Ab}{\mathbf{Ab}}
 \newcommand*{\Grp}{\mathbf{Grp}}
@@ -285,11 +287,12 @@
 \newcommand{\Aff}{\mathbf{Aff}}
 \newcommand{\GrpSch}{\mathbf{GrpSch}}
 \newcommand{\AlgGrp}{\mathbf{AlgGrp}}
-\newcommand{\Rep}{\mathbf{Rep}}
+\newcommand{\Rep}{\mathbf{Rep}\,}
 \newcommand{\Open}{\mathbf{Open}}
 \newcommand{\PreSh}{\mathbf{PreSh}}
 \newcommand{\Sh}{\mathbf{Sh}}
 \newcommand{\Func}{\mathbf{Func}}
+\newcommand{\Vect}{\mathbf{Vect}}
 
 %Homological algebra
 \DeclareMathOperator{\cone}{cone}
@@ -298,13 +301,19 @@
 \DeclareMathOperator{\Ext}{Ext}
 \DeclareMathOperator{\Tor}{Tor}
 
+%Representation theory
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\Res}{Res}
+
 %Algebraic Geometry
 \DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Proj}{Proj}
 \let\O\relax
 \newcommand*{\O}{\calO}
 \newcommand{\A}[1]{\bbA^{#1}}
 \let\P\relax
 \newcommand{\P}[1]{\bbP^{#1}}
+\DeclareMathOperator{\supp}{supp}
 
 %Lie algebras
 \DeclareMathOperator{\ad}{ad}
