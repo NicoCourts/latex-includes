@@ -47,8 +47,8 @@
 \newenvironment{def-prime}[1]
   {\renewcommand{\thethm}{\ref{#1}$'$}%
    \addtocounter{thm}{-1}%
-   \begin{def}}
-  {\end{def}}
+   \begin{defn}}
+  {\end{defn}}
 
 %proofs
 \theoremstyle{nonumberbreak}
@@ -68,7 +68,7 @@
 
 %remarks
 \theoremstyle{change}
-\theoremindent0.5cm
+\theoremindent0cm
 \theoremheaderfont{\sc}
 \theoremseparator{:}
 \theoremsymbol{}
@@ -241,6 +241,8 @@
 \DeclareMathOperator{\colim}{colim}
 \DeclareMathOperator{\invlim}{\lim_{\leftarrow}}
 \DeclareMathOperator{\dirlim}{\lim_{\rightarrow}}
+\newcommand*{\ladjointto}{\enusremath{\dashv}}
+\newcommand*{\radjointto}{\ensuremath{\vdash}}
 
 %Groups/Group Schemes
 \newcommand{\Ga}{\bbG_a}
@@ -272,7 +274,7 @@
 \newcommand*{\Ring}{\mathbf{Ring}}
 \newcommand*{\K}{\mathbf{K}}
 \newcommand*{\D}{\mathbf{D}}
-\newcommand*{\Db}{\mathbf{D}^b}
+\newcommand*{\Db}{\mathbf{D}^\text{b}}
 \newcommand*{\Dpos}{\mathbf{D}^+}
 \newcommand*{\Dneg}{\mathbf{D}^-}
 \newcommand*{\Dbperf}{\mathbf{D}^b_{\text{perf}}}
